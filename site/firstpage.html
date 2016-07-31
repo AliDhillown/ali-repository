@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	       <title>ff</title>
+		   <script> 
+		   
+    var images = ['b.jpg','a.jpg','c.jpg'];
+    var index = 0;
+
+    function buildImage() {
+      var img = document.createElement('img');
+      img.src = images[index];
+      document.getElementById('content').appendChild(img);
+    }
+	function ali()
+{
+	setTimeout(
+	function (){
+	var img = document.getElementById('content').getElementsByTagName('img')[0]; 
+	img.src = images[index++%images.length]; }
+	
+	,100);
+}
+     
+</script>
+</head>
+
+<body onload="buildImage()"   >
+<script>
+
+</script>
+    <div class="contents" id="content"></div>
+    <button onclick="ali()" >hihubhghuhdsd</button>
+</body>
+		  
+      
+ 
+
+
+         
+
+</html>
